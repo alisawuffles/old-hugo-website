@@ -5,7 +5,7 @@
     <link>https://alisawuffles.github.io/authors/</link>
       <atom:link href="https://alisawuffles.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,10 +15,98 @@
     <item>
       <title></title>
       <link>https://alisawuffles.github.io/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://alisawuffles.github.io/authors/admin/</guid>
       <description>&lt;p&gt;Hi! I am a senior at Northwestern University studying computer science and math, and I identify with the natural language processing and computer audition communities. My current research includes definition modeling for word compounds, audio captioning, and some tinkering in music generation. I&amp;rsquo;ve recently been thinking a lot about developing automatic measures of model confidence and how they can be used to enable different training techniques and incorporate human input. I have been super fortunate to work with Professor Doug Downey, Professor Bryan Pardo, and Dr. Prem Seetharaman.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Bryan Pardo</title>
+      <link>https://alisawuffles.github.io/authors/bryan-pardo/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/bryan-pardo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prem Seetharaman</title>
+      <link>https://alisawuffles.github.io/authors/prem-seetharaman/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/prem-seetharaman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Doug Downey</title>
+      <link>https://alisawuffles.github.io/authors/doug-downey/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/doug-downey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruimin Zhu</title>
+      <link>https://alisawuffles.github.io/authors/ruimin-zhu/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/ruimin-zhu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thanapon Noraset</title>
+      <link>https://alisawuffles.github.io/authors/thanapon-noraset/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/thanapon-noraset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wenxin Jiang</title>
+      <link>https://alisawuffles.github.io/authors/wenxin-jiang/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/wenxin-jiang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jared Fernandez</title>
+      <link>https://alisawuffles.github.io/authors/jared-fernandez/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/jared-fernandez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael Chen</title>
+      <link>https://alisawuffles.github.io/authors/michael-chen/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/michael-chen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mike D&#39;arcy</title>
+      <link>https://alisawuffles.github.io/authors/mike-darcy/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/mike-darcy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dexter Everett</title>
+      <link>https://alisawuffles.github.io/authors/dexter-everett/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/dexter-everett/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenny Pan</title>
+      <link>https://alisawuffles.github.io/authors/jenny-pan/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/authors/jenny-pan/</guid>
+      <description></description>
     </item>
     
   </channel>

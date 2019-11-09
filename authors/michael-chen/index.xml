@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Chen | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/authors/michael-chen/</link>
+      <atom:link href="https://alisawuffles.github.io/authors/michael-chen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Michael Chen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/img/icon-192.png</url>
+      <title>Michael Chen</title>
+      <link>https://alisawuffles.github.io/authors/michael-chen/</link>
+    </image>
+    
+    <item>
+      <title>CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense</title>
+      <link>https://alisawuffles.github.io/publication/codah/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/codah/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

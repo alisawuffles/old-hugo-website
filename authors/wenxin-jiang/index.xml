@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wenxin Jiang | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/authors/wenxin-jiang/</link>
+      <atom:link href="https://alisawuffles.github.io/authors/wenxin-jiang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wenxin Jiang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/img/icon-192.png</url>
+      <title>Wenxin Jiang</title>
+      <link>https://alisawuffles.github.io/authors/wenxin-jiang/</link>
+    </image>
+    
+    <item>
+      <title>Multi-sense Definition Modeling using Word Sense Decompositions</title>
+      <link>https://alisawuffles.github.io/publication/multidef/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/multidef/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

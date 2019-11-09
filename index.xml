@@ -5,12 +5,44 @@
     <link>https://alisawuffles.github.io/</link>
       <atom:link href="https://alisawuffles.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Alisa Liu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-192.png</url>
       <title>Alisa Liu</title>
       <link>https://alisawuffles.github.io/</link>
     </image>
+    
+    <item>
+      <title>Model selection for deep audio source separation via clustering analysis</title>
+      <link>https://alisawuffles.github.io/publication/ensemble/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/ensemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-sense Definition Modeling using Word Sense Decompositions</title>
+      <link>https://alisawuffles.github.io/publication/multidef/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/multidef/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense</title>
+      <link>https://alisawuffles.github.io/publication/codah/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/codah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of Discourse Surrounding CRISPR/Cas9 in the Media and Peer-Reviewed Literature</title>
+      <link>https://alisawuffles.github.io/publication/crispr/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/crispr/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
