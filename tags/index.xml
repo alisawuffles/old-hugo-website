@@ -5,12 +5,28 @@
     <link>https://alisawuffles.github.io/tags/</link>
       <atom:link href="https://alisawuffles.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-192.png</url>
       <title>Tags</title>
       <link>https://alisawuffles.github.io/tags/</link>
     </image>
+    
+    <item>
+      <title>class project</title>
+      <link>https://alisawuffles.github.io/tags/class-project/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/tags/class-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://alisawuffles.github.io/tags/research/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/tags/research/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>deep clustering</title>
@@ -61,14 +77,6 @@
     </item>
     
     <item>
-      <title>class project</title>
-      <link>https://alisawuffles.github.io/tags/class-project/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/tags/class-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>common sense</title>
       <link>https://alisawuffles.github.io/tags/common-sense/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
@@ -89,14 +97,6 @@
       <link>https://alisawuffles.github.io/tags/question-answering/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       <guid>https://alisawuffles.github.io/tags/question-answering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>research</title>
-      <link>https://alisawuffles.github.io/tags/research/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/tags/research/</guid>
       <description></description>
     </item>
     

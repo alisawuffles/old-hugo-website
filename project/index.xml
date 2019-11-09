@@ -5,7 +5,7 @@
     <link>https://alisawuffles.github.io/project/</link>
       <atom:link href="https://alisawuffles.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-192.png</url>
       <title>Projects</title>
@@ -13,22 +13,31 @@
     </image>
     
     <item>
-      <title>Analysis of error types in multi-sense definition generation</title>
-      <link>https://alisawuffles.github.io/project/multidef/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/multidef/</guid>
-      <description>&lt;p&gt;Evaluated the settings under which a multi-sense definition modeling system succeeded and failed by investigating whether certain attributes of words and atoms were predictive of model performance. Used logistic regression with these attributes (e.g. word frequency, embedding norm, part of speech) to predict individual error types as well as a manual evaluation score. We found that atom weight was a significant predictor for score, showing that atoms with greater weights are likely to represent more dominant sense that are easier to define.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Augmentative generation for Bach chorales</title>
       <link>https://alisawuffles.github.io/project/deepbach/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://alisawuffles.github.io/project/deepbach/</guid>
       <description>&lt;p&gt;A major limitation of music generation systems for a specific domain is finite training data. Researchers have augmented data with techniques such as transposition, which loses compositional information specific to its original key, or by extracting multiple short segments from each piece, which loses long-term coherence. We propose an alternative method which augments a dataset limited in training examples by using an existing model’s generated output weighted by a hand-crafted score function, to feed back as new training data to update the model. We try this method with DeepBach, a model trained to generate chorales in the style of Bach, a task where gold data is inherently limited to the 389 chorales Bach wrote in his lifetime. While this is a large output for a single composer, it is not enough for training deep models. Our hypothesis is that training on high-quality generated output is more useful than training on simple transformations of the same music.&lt;/p&gt;
 
 &lt;p&gt;This is very much a work in progress and we hope to use our class project as an opportunity to be extra creative, so please let us know if you have any thoughts or suggestions!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Definition modeling for noun compounds</title>
+      <link>https://alisawuffles.github.io/project/noun-compounds/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/noun-compounds/</guid>
+      <description>&lt;p&gt;Developing a neural language model that generates definitions and paraphrases of noun compounds (e.g. “caramel popcorn”). We identified a large pool of noun compounds in text using a POS-tagging rule, and we are currently incorporating human-authored definitions for these unlabeled noun compounds to evaluate the impact of active learning on generation tasks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ensemble model for audio source separation</title>
+      <link>https://alisawuffles.github.io/project/ensemble/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/ensemble/</guid>
+      <description>&lt;p&gt;Built an ensemble model for audio source separation that can handle mixtures whose source domain is unknown, using a confidence measure to mediate among domain-specific models based on deep clustering. We derived a confidence measure based on the clusterability of the embedding space which approximates the separation quality without ground-truth comparison.&lt;/p&gt;
 </description>
     </item>
     
@@ -42,20 +51,11 @@
     </item>
     
     <item>
-      <title>Definition modeling for noun compounds</title>
-      <link>https://alisawuffles.github.io/project/noun-compounds/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/noun-compounds/</guid>
-      <description>&lt;p&gt;Developing a neural language model that generates definitions and paraphrases of noun compounds (e.g. “caramel popcorn”). We identified a large pool of noun compounds in text using a POS-tagging rule, and we are currently incorporating human-authored definitions for these unlabeled noun compounds to evaluate the impact of active learning on generation tasks.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ensemble model for audio source separation</title>
-      <link>https://alisawuffles.github.io/project/ensemble/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/ensemble/</guid>
-      <description>&lt;p&gt;Built an ensemble model for audio source separation that can handle mixtures whose source domain is unknown, using a confidence measure to mediate among domain-specific models based on deep clustering. We derived a confidence measure based on the clusterability of the embedding space which approximates the separation quality without ground-truth comparison.&lt;/p&gt;
+      <title>Analysis of error types in multi-sense definition generation</title>
+      <link>https://alisawuffles.github.io/project/multidef/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/multidef/</guid>
+      <description>&lt;p&gt;Evaluated the settings under which a multi-sense definition modeling system succeeded and failed by investigating whether certain attributes of words and atoms were predictive of model performance. Used logistic regression with these attributes (e.g. word frequency, embedding norm, part of speech) to predict individual error types as well as a manual evaluation score. We found that atom weight was a significant predictor for score, showing that atoms with greater weights are likely to represent more dominant sense that are easier to define.&lt;/p&gt;
 </description>
     </item>
     
