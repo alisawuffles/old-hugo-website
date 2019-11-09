@@ -5,12 +5,23 @@
     <link>https://alisawuffles.github.io/</link>
       <atom:link href="https://alisawuffles.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Alisa Liu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-192.png</url>
       <title>Alisa Liu</title>
       <link>https://alisawuffles.github.io/</link>
     </image>
+    
+    <item>
+      <title>A guide to Grace Hopper for the rare non-recruiting student</title>
+      <link>https://alisawuffles.github.io/post/grace_hopper/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/post/grace_hopper/</guid>
+      <description>&lt;p&gt;In the weeks leading up to Grace Hopper this year and in the midst of everyone&#39;s recruiting , I wasn&#39;t sure why I was going.&lt;/p&gt;
+
+&lt;p&gt;Many universities have booths with graduate school admissions officers!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Model selection for deep audio source separation via clustering analysis</title>
@@ -42,7 +53,9 @@
       <link>https://alisawuffles.github.io/project/deepbach/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
       <guid>https://alisawuffles.github.io/project/deepbach/</guid>
-      <description>&lt;p&gt;A major limitation of music generation systems for a specific domain is finite training data. In particular, in Bach chorale generation, data is inherently limited to the 389 chorales Bach wrote in his lifetime. Researchers have augmented this data with techniques such as transposition, which loses compositional information specific to its original key, or by extracting multiple short segments from each piece, which loses long-term coherence. We propose an alternative method which augments a dataset limited in training examples by using an existing model’s generated output weighted by a hand-crafted score function, to feed back as new training data to update the model. We try this method with DeepBach, a model trained to generate chorales in the style of Bach. Our hypothesis is that training on high-quality generated output is more useful than training on simple transformations of the same music.&lt;/p&gt;
+      <description>&lt;p&gt;A major limitation of music generation systems for a specific domain is finite training data. Researchers have augmented data with techniques such as transposition, which loses compositional information specific to its original key, or by extracting multiple short segments from each piece, which loses long-term coherence. We propose an alternative method which augments a dataset limited in training examples by using an existing model’s generated output weighted by a hand-crafted score function, to feed back as new training data to update the model. We try this method with DeepBach, a model trained to generate chorales in the style of Bach, a task where gold data is inherently limited to the 389 chorales Bach wrote in his lifetime. While this is a large output for a single composer, it is not enough for training deep models. Our hypothesis is that training on high-quality generated output is more useful than training on simple transformations of the same music.&lt;/p&gt;
+
+&lt;p&gt;This is very much a work in progress and we hope to use our class project as an opportunity to be extra creative, so please let us know if you have any thoughts or suggestions!&lt;/p&gt;
 </description>
     </item>
     
