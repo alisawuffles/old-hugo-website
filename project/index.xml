@@ -13,6 +13,15 @@
     </image>
     
     <item>
+      <title>Audio captioning</title>
+      <link>https://alisawuffles.github.io/project/audio-captioning/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/audio-captioning/</guid>
+      <description>&lt;p&gt;Developing a transformer model that generates natural language descriptions of audio clips using the recently released &lt;a href=&#34;https://arxiv.org/abs/1910.09387&#34; target=&#34;_blank&#34;&gt;Clotho dataset&lt;/a&gt;, the first audio caption dataset where captions are collected without accompanying video.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Augmentative generation for Bach chorales</title>
       <link>https://alisawuffles.github.io/project/deepbach/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
