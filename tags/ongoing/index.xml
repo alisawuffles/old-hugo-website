@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Alisa Liu</title>
-    <link>https://alisawuffles.github.io/project/</link>
-      <atom:link href="https://alisawuffles.github.io/project/index.xml" rel="self" type="application/rss+xml" />
-    <description>Projects</description>
+    <title>ongoing | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tags/ongoing/</link>
+      <atom:link href="https://alisawuffles.github.io/tags/ongoing/index.xml" rel="self" type="application/rss+xml" />
+    <description>ongoing</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-32.png</url>
-      <title>Projects</title>
-      <link>https://alisawuffles.github.io/project/</link>
+      <title>ongoing</title>
+      <link>https://alisawuffles.github.io/tags/ongoing/</link>
     </image>
     
     <item>
@@ -38,33 +38,6 @@
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://alisawuffles.github.io/project/noun-compounds/</guid>
       <description>&lt;p&gt;Developing a neural language model that generates definitions and paraphrases of noun compounds (e.g. “caramel popcorn”). We identified a large pool of noun compounds in text using a POS-tagging rule, and we are currently incorporating human-authored definitions for these unlabeled noun compounds to evaluate the impact of active learning on generation tasks.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ensemble model for audio source separation</title>
-      <link>https://alisawuffles.github.io/project/ensemble/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/ensemble/</guid>
-      <description>&lt;p&gt;Built an ensemble model for audio source separation that can handle mixtures whose source domain is unknown, using a confidence measure to mediate among domain-specific models based on deep clustering. We derived a confidence measure based on the clusterability of the embedding space which approximates the separation quality without ground-truth comparison.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Common sense QA dataset</title>
-      <link>https://alisawuffles.github.io/project/codah/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/codah/</guid>
-      <description>&lt;p&gt;Produced an adversarially generated commonsense question-answer dataset, using a novel question acquisition procedure where workers author questions designed to target weaknesses of state-of-the-art neural QA systems.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Analysis of error types in multi-sense definition generation</title>
-      <link>https://alisawuffles.github.io/project/multidef/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/project/multidef/</guid>
-      <description>&lt;p&gt;Evaluated the settings under which a multi-sense definition modeling system succeeded and failed by investigating whether certain attributes of words and atoms were predictive of model performance. Used logistic regression with these attributes (e.g. word frequency, embedding norm, part of speech) to predict individual error types as well as a manual evaluation score. We found that atom weight was a significant predictor for score, showing that atoms with greater weights are likely to represent more dominant sense that are easier to define.&lt;/p&gt;
 </description>
     </item>
     
