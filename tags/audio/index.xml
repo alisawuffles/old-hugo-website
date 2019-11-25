@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>audio | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tags/audio/</link>
+      <atom:link href="https://alisawuffles.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <description>audio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/img/icon-32.png</url>
+      <title>audio</title>
+      <link>https://alisawuffles.github.io/tags/audio/</link>
+    </image>
+    
+    <item>
+      <title>Audio captioning</title>
+      <link>https://alisawuffles.github.io/project/audio-captioning/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/audio-captioning/</guid>
+      <description>&lt;p&gt;Developing a transformer model that generates natural language descriptions of audio clips using the recently released &lt;a href=&#34;https://arxiv.org/abs/1910.09387&#34; target=&#34;_blank&#34;&gt;Clotho dataset&lt;/a&gt;, the first audio caption dataset with captions collected without accompanying video.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ensemble model for audio source separation</title>
+      <link>https://alisawuffles.github.io/project/ensemble/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/project/ensemble/</guid>
+      <description>&lt;p&gt;Built an ensemble model for audio source separation that can handle mixtures whose source domain is unknown, using a confidence measure to mediate among domain-specific models based on deep clustering. We derived a confidence measure based on the clusterability of the embedding space which approximates the separation quality without ground-truth comparison.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
