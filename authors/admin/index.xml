@@ -262,7 +262,7 @@ These plots show that Bach chorales score much better on average than generated 
 
 &lt;h2 id=&#34;model-details&#34;&gt;Model details&lt;/h2&gt;
 
-&lt;p&gt;We updated the model for $43$ iterations. Each iteration, we generated $50$ training examples for consideration. Of note, after this process our model saw less than one-fifth of the training data used in the original DeepBach paper, which consists of Bach chorales and their transpositions.&lt;/p&gt;
+&lt;p&gt;We updated the model for $43$ iterations. Each iteration, we generated $50$ training examples for consideration. We train on the selected chorales for $2$ epochs. Of note, after this process our model saw less than one-fifth of the training data used in the original DeepBach paper, which consists of Bach chorales and their transpositions.&lt;/p&gt;
 
 &lt;h2 id=&#34;evaluation&#34;&gt;Evaluation&lt;/h2&gt;
 
