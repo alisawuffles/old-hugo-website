@@ -316,14 +316,14 @@ These distributions show that Bach chorales score much better on average than ge
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;4_real.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/4_real.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;4_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/4_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;/p&gt;&lt;/li&gt;
@@ -332,14 +332,14 @@ These distributions show that Bach chorales score much better on average than ge
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;3_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/3_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;3_real.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/3_real.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;/p&gt;&lt;/li&gt;
@@ -348,14 +348,14 @@ These distributions show that Bach chorales score much better on average than ge
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;6_real.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/6_real.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 
 &lt;audio controls style=&#34;width: 100%; margin-bottom: 20px&#34;&gt;
     
     
-    &lt;source src=&#34;6_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
+    &lt;source src=&#34;../../audio/6_fake.wav&#34; type=&#34;audio/wav&#34;&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;/p&gt;&lt;/li&gt;
