@@ -120,7 +120,7 @@
     
       <meta property="article:published_time" content="2019-11-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-11-26T00:42:43-06:00">
+    <meta property="article:modified_time" content="2019-12-12T22:43:19-06:00">
   
 
   
@@ -153,7 +153,7 @@
   ],
   
   "datePublished": "2019-11-01T00:00:00Z",
-  "dateModified": "2019-11-26T00:42:43-06:00",
+  "dateModified": "2019-12-12T22:43:19-06:00",
   
   "author": {
     "@type": "Person",
@@ -447,6 +447,19 @@
 
   
   
+  
+  
+  <div>
+    
+
+
+
+  
+  <span>Alisa Liu</span>, <span>Alexander Fang</span>
+
+  </div>
+  
+  
 
   
   <span class="article-date">
@@ -456,7 +469,7 @@
           Last updated on
       
     
-    11/26/19
+    12/12/19
   </span>
   
 
@@ -496,9 +509,358 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>A major limitation of music generation systems for a specific domain is finite training data. Researchers have augmented data with techniques such as transposition, which loses compositional information specific to its original key, or by extracting multiple short segments from each piece, which loses long-term coherence. We propose an alternative method which augments a dataset limited in training examples by using an existing model’s generated output weighted by a hand-crafted score function, to feed back as new training data to update the model. We try this method with DeepBach, a model trained to generate chorales in the style of Bach, a task where gold data is inherently limited to the 389 chorales Bach wrote in his lifetime. While this is a large output for a single composer, it is not enough for training deep models. Our hypothesis is that training on high-quality generated output is more useful than training on simple transformations of the same music.</p>
+      
 
-<p>This is very much a work in progress and we hope to use our class project as an opportunity to be extra creative, so please let us know if you have any thoughts or suggestions!</p>
+<p>Deep learning has become the state-of-the-art approach for music generation, but these networks require massive data. For music generation systems on a specific music domain, such as Bach chorales, Mozart sonatas, or Beatles hits, training data is limited to the real work of musicians during their lifetime. Researchers commonly approach this problem by artificially augmenting the dataset with synthetic data, a technique known as <em>dataset augmentation</em>. In the musical domain, a natural way is to transpose music examples in all keys, or to segment examples into many shorter fragments. However, these all suffer musical limitations: the original key signature is deliberately chosen by the composer and typically associated with certain emotions and expressive qualities, and segmenting examples prevents a network from being able to learn the long-term coherence of human-written music.</p>
+
+<p>We propose an alternative method for data augmentation, which we call <em>augmentative generation</em>. After training a base model on the original dataset, we generate some output from the model, filter it by a hand-crafted score function, and feed it back to the model as new training data to update the model. This generate-update iteration can be continued until it stops improving the model. We try this method with chorale generation in the style of J.S. Bach, using the <a href="#deepbach_cite" target="_blank">DeepBach</a> model. For Bach chorale generation, gold data is inherently limited to the 389 chorales Bach wrote in his lifetime. While this is considered a large output for a single form for a composer, 389 training examples are often not enough in training machine learning models, motivating our proposed solution.</p>
+
+<p>While augmentative generation can be applied to any generation system where training data is limited, the score function must be handcrafted for each domain. We argue that this is a good thing, since a limitation of deep learning techniques compared to handcrafted models is that they do not offer direct ways of controlling generation. But given that we know things about what some widely accepted music should sound like, we believe that a handcrafted function allows musicians to incorporate important domain knowledge into the music generation task, while still using the representational capacity of a neural network. That is, rather than enforcing things about our output, we can enforce things about the input that our model is trained on.</p>
+
+<h1 id="proposed-method">Proposed method</h1>
+
+<p>First we train the base model on the original 351 Bach chorales. Compared to the original DeepBach paper, we do not use any transpositions of Bach chorales.</p>
+
+<p>Then, we perform a series of generation-train updates. In each iteration, we generate $N$ chorales and score each one. We set our threshold as the score of the lowest-scoring Bach chorale, with the justification that every real Bach chorale should be selected by our score function. We update the model by training on the selected examples for $M$ epochs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/architecture.png" data-caption="Augmentative generation training procedure applied to DeepBach">
+<img src="../../img/architecture.png" alt="" ></a>
+
+
+  
+  
+  <figcaption>
+    Augmentative generation training procedure applied to DeepBach
+  </figcaption>
+
+
+</figure>
+
+
+<h2 id="deepbach">DeepBach</h2>
+
+<p>We apply our method to <a href="#deepbach_cite" target="_blank">DeepBach</a>, an architecture that was designed for the generation of Bach chorales. It combines two recurrent networks (LSTMs) and two feedforward networks. One recurrent network sums up past information, one recurrent network sums up future information, and a non-recurrent network represents notes occurring at the same time. The outputs of the three models are merged and passed as the input of a final feedforward neural network, whose output activation function is softmax. This architecture is replicated four times, one for each voice in a chorale. Generation is done by sampling, using a pseudo-Gibbs sampling incremental and iterative algorithm.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/deepbach_architecture.png" data-caption="DeepBach’s neural network architecture for prediction of the soprano voice">
+<img src="../../img/deepbach_architecture.png" alt="" width="30%" ></a>
+
+
+  
+  
+  <figcaption>
+    DeepBach’s neural network architecture for prediction of the soprano voice
+  </figcaption>
+
+
+</figure>
+</p>
+
+<p>We use the same data representation as in the original DeepBach paper. In particular, notes are encoded as MIDI pitches and discretized into sixteenth notes. A hold symbol “&ndash;” is used to indicate whether the preceding note is held. The fermata symbol for Bach chorales is explicitly considered in the metadata to help produce structure and coherent phrases.</p>
+
+<h2 id="score-function">Score function</h2>
+
+<p>The score function determines which generated chorales are used to update the model. Given a chorale, the score function should output a value that captures how much it looks like real Bach chorales. Our basic method is to compare feature distributions between a given chorale and real Bach chorales. (To be clear, a distribution is a histogram of counts, normalized by the total number of notes.) For each feature $f$, we use the <a href="https://en.wikipedia.org/wiki/Wasserstein_metric" target="_blank">Wasserstein metric</a> to measure the distance between the distribution $P_{c}^f$ of the given chorale and the ground-truth distribution $P_{\text{Bach}}^f$ over real Bach chorales. The resulting value, $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$, is weighted by $w^f$. The overall score is therefore a weighted sum of these distances over all features $f$. That is,
+$$S( c )=\sum_{f\in\text{features}} Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)\cdot w^f$$
+Since low distances represent high similarity between a given chorale and real Bach chorales, we subtract $S( c )$ from a large constant so that higher scores correspond to better chorales.</p>
+
+<p>The weights $w^f$ are carefully handpicked in an iterative process where we modify the score, judge its correlation with our own perception of chorale quality, and modify the score further. We take into account the natural value range of $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$ and the importance of the feature to a good chorale.</p>
+
+<p>The features we use in the score function are notes, rhythm, interval, parallel errors, and other voice leading errors. We describe these next.</p>
+
+<h3 id="notes">Notes</h3>
+
+<p>The note distribution is the distribution of notes in scale degrees. The ground-truth note distribution for Bach chorales in major and Bach chorales in minor are calculated separately. Below are the ground-truth distributions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/note_distributions.png" data-caption="Distribution of notes (in scale degrees) over Bach chorales">
+<img src="../../img/note_distributions.png" alt="" ></a>
+
+
+  
+  
+  <figcaption>
+    Distribution of notes (in scale degrees) over Bach chorales
+  </figcaption>
+
+
+</figure>
+
+
+<p>For an example, consider the following generated chorale and its note distribution.</p>
+
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/chorale_ex.png" data-caption="The score of a chorale generated by our base model">
+<img src="../../img/chorale_ex.png" alt="" width="70%" ></a>
+
+
+  
+  
+  <figcaption>
+    The score of a chorale generated by our base model
+  </figcaption>
+
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/chorale_ex_distribution.png" data-caption="The note distribution (in scale degrees) for an example chorale">
+<img src="../../img/chorale_ex_distribution.png" alt="" width="50%" ></a>
+
+
+  
+  
+  <figcaption>
+    The note distribution (in scale degrees) for an example chorale
+  </figcaption>
+
+
+</figure>
+</p>
+
+<p>Since this chorale is in G major, the chorale note distribution is compared to the ground-truth major note distribution to obtain $Wass\left(P_{c}^\text{note},P_{\text{Bach}}^{\text{note},M}\right)$.</p>
+
+<h3 id="rhythm">Rhythm</h3>
+
+<p>The rhythm distribution is the distribution of note lengths in units of quarter notes.</p>
+
+<h3 id="interval">Interval</h3>
+
+<p>The interval distribution is the distribution of interval sizes.</p>
+
+<h3 id="parallel-errors">Parallel errors</h3>
+
+<p>The parallel errors distribution is the distribution of parallel 5th and parallel octaves errors. However, note here that what matters is not only the ratio of parallel 5ths and parallel octaves, but the count of these errors relative to the total number of notes. Therefore, $w^\text{parallel}$ includes a term
+$$\frac{\text{error to note ratio of chorale }c}{\text{error to note ratio of Bach}}$$</p>
+
+<h3 id="other-errors">Other errors</h3>
+
+<p>The other errors distribution is the distribution of hidden 5ths, hidden octaves, voice overlaps, voice crossings, and voice range violations. Similarly to the previous feature, $w^\text{errors}$ includes a term to account for the absolute count of errors, in addition to the relative counts in the distribution.</p>
+
+<h1 id="experiments">Experiments</h1>
+
+<p>In our experiments, we first show that the score function effectively distinguishes real Bach chorales from generations. Then we carry out human evaluations to compare generations of three models: our model trained through augmentative generation on Bach chorales and high-quality generations, our base model trained on only Bach chorales, and the model in the original DeepBach paper trained on Bach chorales and their transpositions.</p>
+
+<h2 id="evaluating-the-score-function">Evaluating the score function</h2>
+
+<p>Because the score function measures how similar a given chorale is to real Bach chorales, a simple evaluation method is to ensure that real Bach chorales score higher than generated chorales. To see this, we plot the distribution of scores for real Bach chorales and chorales generated by our base model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="../../img/score_distribution.png" data-caption="The score distribution for Bach chorales and generated chorales">
+<img src="../../img/score_distribution.png" alt="" width="100%" ></a>
+
+
+  
+  
+  <figcaption>
+    The score distribution for Bach chorales and generated chorales
+  </figcaption>
+
+
+</figure>
+
+These distributions show that Bach chorales score much better on average than generated chorales, which is an indication that the score function serves its purpose of measuring similarity to real Bach chorales. We also see that generated chorales display high variation in quality, which demonstrates the importance of a employing a filter on the generated chorales.</p>
+
+<p>Note that generated chorales which overlap with real chorales in score are the ones that would be selected for training on.</p>
+
+<h2 id="model-details">Model details</h2>
+
+<p>We updated the model for $43$ iterations. Each iteration, we generated $50$ training examples. Of note, after this process our model saw less than one-fifth of the training data used in the original DeepBach paper, which consists of Bach chorales and their transpositions.</p>
+
+<h2 id="evaluation">Evaluation</h2>
+
+<p>In the paired discrimination task, participants with music training are presented with pairs of audio clips where one is a real Bach chorale and one is generated output. The generated output comes from one of three models: our model trained through augmentative generation on Bach chorales and high-quality generations, our base model trained on only Bach chorales, and the model in the original DeepBach paper trained on Bach chorales and their transpositions. Participants are told that not all generated outputs are produced by the same model. We then compare human accuracy at detecting generated music for each model.</p>
+
+<p>For preliminary experiments, we have $n=1$ participant with a conservatory degree in piano performance. We presented 30 pairs of audio samples, using $30$ Bach chorales and $10$ randomly selected generations from each model.</p>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DeepBach (trained on Bach chorales)</td>
+<td>0.90</td>
+</tr>
+
+<tr>
+<td>DeepBach (trained on Bach chorales + transpositions)</td>
+<td>0.90</td>
+</tr>
+
+<tr>
+<td>DeepBach (trained on Bach chorales + augmentative generation)</td>
+<td>0.90</td>
+</tr>
+</tbody>
+</table>
+
+<p>Unfortunately our experiments were conducted under the grueling demands of finals week, and not yet extensive enough to be discriminative. Future work is discussed below.</p>
+
+<h1 id="music-samples">Music samples</h1>
+
+<p>See if you can discriminate between Bach chorales and generated chorales yourself! In each of the following pairs, one chorale is composed by Bach and one is generated. The answers are behind the references.</p>
+
+<ol>
+<li><p>The generated chorale comes from DeepBach (trained on Bach chorales), which is our base model.
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="4_real.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="4_fake.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+</p></li>
+
+<li><p>The generated chorale comes from DeepBach (trained on Bach chorales + transpositions), from the original DeepBach paper.
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="3_fake.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="3_real.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+</p></li>
+
+<li><p>The generated chorale comes from DeepBach (trained on Bach chorales + augmentative generation), which is our contribution.
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="6_real.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+
+<audio controls style="width: 100%; margin-bottom: 20px">
+    
+    
+    <source src="6_fake.wav" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+</p></li>
+</ol>
+
+<h1 id="upcoming-work-and-ideas">Upcoming work and ideas</h1>
+
+<ol>
+<li>Every handful of generate-train updates, do another pass through the original Bach chorale training data. This way, we ensure that the model does not &ldquo;forget&rdquo; what gold data looks like.</li>
+<li>Show (hopefully) that the score distribution of generated chorales is increasing over time and becoming more similar to the score distribution over Bach chorales. This shows that according to the score function, generations are improving as generate-train updates go on.</li>
+<li>Currently, there is no method of determining when to discontinue generate-train iterations. We need to implement code to evaluate the validation loss at the end of every iteration, in order to stop when training on more generations is no longer improving model performance on validation data.</li>
+<li>Conduct a much more extensive version of the human evaluation. In addition to measuring discrimination accuracy, we intend to measure decision time as an indicator of confidence. This is motivated by an observation we made in our preliminary experiment: even though our participant displayed the same performance for each model, his amount hesitation varied significantly (sometimes, he did not even listen to the full audio sample; other times, he deliberated thoughtfully and made a &ldquo;guess&rdquo;.) We hope to show that our model causes longer decision times, suggesting that its generations are more challenging to distinguish from real Bach chorales. Moreover, we hope to show that decision time correlates positively with the chorale score: that is, the higher-scoring a chorale is, the longer it takes a trained listener to determine whether it is real or generated.</li>
+</ol>
+
+<h1 id="references">References</h1>
+
+<ol>
+<li>Jean-Pierre Briot and François Pachet. &ldquo;Music Generation by Deep Learning – Challenges and Directions.&rdquo;<em>Neural Computing and Applications</em>, 2018. <a name="challenges_directions_cite"></li>
+<li>Gaetan Hadjeres, Francois Pachet, Frank Nielsen. “DeepBach: a Steerable Model for Bach chorales generation.” <em>The International Conference on Machine Learning</em> (ICML), 2016. <a name="deepbach_cite"></li>
+</ol>
+
+<p>Answers: 1. first chorale is real. 2. second chorale is real. 3. first chorale is real.</p>
 
     </div>
 
@@ -533,6 +895,10 @@
 
 
 
+  
+  
+    
+  
   
 
 
