@@ -120,7 +120,7 @@
     
       <meta property="article:published_time" content="2019-11-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-12-12T23:34:43-06:00">
+    <meta property="article:modified_time" content="2019-12-13T10:40:54-06:00">
   
 
   
@@ -153,7 +153,7 @@
   ],
   
   "datePublished": "2019-11-01T00:00:00Z",
-  "dateModified": "2019-12-12T23:34:43-06:00",
+  "dateModified": "2019-12-13T10:40:54-06:00",
   
   "author": {
     "@type": "Person",
@@ -469,7 +469,7 @@
           Last updated on
       
     
-    12/12/19
+    12/13/19
   </span>
   
 
@@ -631,11 +631,11 @@
 
 <h2 id="score-function">Score function</h2>
 
-<p>The score function determines which generated chorales are used to update the model. Given a chorale, the score function should output a value that captures how much it looks like real Bach chorales. Our basic method is to compare feature distributions between a given chorale and real Bach chorales. (To be clear, a distribution is a histogram of counts, normalized by the total number of notes.) For each feature $f$, we use the <a href="https://en.wikipedia.org/wiki/Wasserstein_metric" target="_blank">Wasserstein metric</a> to measure the distance between the distribution $P_{c}^f$ of the given chorale and the ground-truth distribution $P_{\text{Bach}}^f$ over real Bach chorales. The resulting value, $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$, is weighted by $w^f$. The overall score is therefore a weighted sum of these distances over all features $f$. That is,
+<p>The score function determines which generated chorales are used to update the model. Given a chorale, the score function should output a value that captures how much it looks like real Bach chorales. Our basic method is to compare feature distributions between a given chorale and real Bach chorales. (To be clear, a distribution is a histogram of counts, normalized by the total number of notes.) For each feature $f$, we use the <a href="https://en.wikipedia.org/wiki/Wasserstein_metric" target="_blank">Wasserstein metric</a> to measure the distance between the distribution $P_{c}^f$ of the given chorale $c$ and the ground-truth distribution $P_{\text{Bach}}^f$ over real Bach chorales. The resulting value, $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$, is weighted by $w^f$. The overall score is therefore a weighted sum of these distances over all features $f$. That is,
 $$S( c )=\sum_{f\in\text{features}} Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)\cdot w^f$$
 Since low distances represent high similarity between a given chorale and real Bach chorales, we subtract $S( c )$ from a large constant so that higher scores correspond to better chorales.</p>
 
-<p>The weights $w^f$ are carefully handpicked in an iterative process where we modify the score, judge its correlation with our own perception of chorale quality, and modify the score further. We take into account the natural value range of $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$ and the importance of the feature to a good chorale.</p>
+<p>The weights $w^f$ are carefully handpicked in an iterative process where we modify the weights, judge its correlation with our own perception of chorale quality, and modify the weights further. For each feature we take into account the natural value range of $Wass\left(P_{c}^f,P_{\text{Bach}}^f\right)$, its empirical usefulness in distinguishing chorale quality, and its overall musical importance to a good chorale.</p>
 
 <p>The features we use in the score function are notes, rhythm, interval, parallel errors, and other voice leading errors. We describe these next.</p>
 
@@ -791,7 +791,7 @@ $$\frac{\text{error to note ratio of chorale }c}{\text{error to note ratio of Ba
 
 These plots show that Bach chorales score much better on average than generated chorales, indicating that the score function serves its purpose of measuring similarity to real Bach chorales. We also see that generated chorales display high variation in quality, which demonstrates the importance of an external evaluation metric for generated chorales.</p>
 
-<p>Note that generated chorales which overlap with real chorales in score are the ones that would be selected for training on.</p>
+<p>Note that based on our score threshold, the generated chorales which which would be selected can be visualized as those that &ldquo;overlap&rdquo; with real chorales in the score distribution.</p>
 
 <h2 id="model-details">Model details</h2>
 
