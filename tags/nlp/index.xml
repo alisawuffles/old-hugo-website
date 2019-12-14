@@ -37,7 +37,9 @@
       <guid>https://alisawuffles.github.io/project/multidef/</guid>
       <description>
 
-&lt;p&gt;Word embeddings capture syntactic and semantic information about words. Definition modeling aims to make the semantic content in each embedding explicit, by outputting a natural language definition based on the embedding. However, existing definition models are limited in their ability to generate accurate definitions for different senses of the same word. In this paper, we introduce a new method that enables definition modeling for multiple senses. Some selected examples are shown below.&lt;/p&gt;
+&lt;p&gt;Word embeddings are vector representations of words that form the foundation for many NLP tasks. While they have been shown to capture semantic similarities and encode analogical relations between words, these comparison tasks only evaluate an embedding’s information indirectly. In contrast, the task of generating natural language definitions from word embeddings provides a more transparent view of the information captured in a word embedding.&lt;/p&gt;
+
+&lt;p&gt;However, existing definition models are limited in their ability to generate accurate definitions for different senses of the same word. In this paper, we introduce a new method that enables definition modeling for multiple senses. Some selected examples are shown below.&lt;/p&gt;
 
 
 
@@ -71,7 +73,7 @@
 
 &lt;h2 id=&#34;quantitative-analysis-of-error-types&#34;&gt;Quantitative analysis of error types&lt;/h2&gt;
 
-&lt;p&gt;In my project, my goal was to better understand the settings under which our best model (W2MDEF-GS) succeeds and failed.&lt;/p&gt;
+&lt;p&gt;In my project, my goal was to better understand the settings under which our best model (W2MDEF-GS) succeeds and fails.&lt;/p&gt;
 
 &lt;p&gt;To evaluate the generated definitions, we manually label outputs as one of four categories: ${\bf I}$ the output is correct; ${\bf II}$ the output has &lt;em&gt;either&lt;/em&gt; a syntax/fluency error or a semantic issue, but not both; ${\bf III}$ the output has both a syntactic and semantic error but is not completely wrong; and ${\bf IV}$ where the output is completely wrong. When evaluating precision and recall, the four labeling categories are given scores $1.0$, $0.6$, $0.3$, and $0.0$ respectively.  A breakdown of the error types is shown below.&lt;/p&gt;
 
@@ -146,6 +148,8 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;p&gt;This work in definition modeling for single words led me to my next project, where I generate definitions for &lt;a href=&#34;https://alisawuffles.github.io/project/noun-compounds/&#34; target=&#34;_blank&#34;&gt;word compounds&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     

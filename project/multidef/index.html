@@ -120,7 +120,7 @@
     
       <meta property="article:published_time" content="2018-12-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-12-14T13:47:57-06:00">
+    <meta property="article:modified_time" content="2019-12-14T14:51:58-06:00">
   
 
   
@@ -153,7 +153,7 @@
   ],
   
   "datePublished": "2018-12-01T00:00:00Z",
-  "dateModified": "2019-12-14T13:47:57-06:00",
+  "dateModified": "2019-12-14T14:51:58-06:00",
   
   "author": {
     "@type": "Person",
@@ -539,7 +539,9 @@
     <div class="article-style">
       
 
-<p>Word embeddings capture syntactic and semantic information about words. Definition modeling aims to make the semantic content in each embedding explicit, by outputting a natural language definition based on the embedding. However, existing definition models are limited in their ability to generate accurate definitions for different senses of the same word. In this paper, we introduce a new method that enables definition modeling for multiple senses. Some selected examples are shown below.</p>
+<p>Word embeddings are vector representations of words that form the foundation for many NLP tasks. While they have been shown to capture semantic similarities and encode analogical relations between words, these comparison tasks only evaluate an embedding’s information indirectly. In contrast, the task of generating natural language definitions from word embeddings provides a more transparent view of the information captured in a word embedding.</p>
+
+<p>However, existing definition models are limited in their ability to generate accurate definitions for different senses of the same word. In this paper, we introduce a new method that enables definition modeling for multiple senses. Some selected examples are shown below.</p>
 
 
 
@@ -573,7 +575,7 @@
 
 <h2 id="quantitative-analysis-of-error-types">Quantitative analysis of error types</h2>
 
-<p>In my project, my goal was to better understand the settings under which our best model (W2MDEF-GS) succeeds and failed.</p>
+<p>In my project, my goal was to better understand the settings under which our best model (W2MDEF-GS) succeeds and fails.</p>
 
 <p>To evaluate the generated definitions, we manually label outputs as one of four categories: ${\bf I}$ the output is correct; ${\bf II}$ the output has <em>either</em> a syntax/fluency error or a semantic issue, but not both; ${\bf III}$ the output has both a syntactic and semantic error but is not completely wrong; and ${\bf IV}$ where the output is completely wrong. When evaluating precision and recall, the four labeling categories are given scores $1.0$, $0.6$, $0.3$, and $0.0$ respectively.  A breakdown of the error types is shown below.</p>
 
@@ -648,6 +650,8 @@
 </tr>
 </tbody>
 </table>
+
+<p>This work in definition modeling for single words led me to my next project, where I generate definitions for <a href="/project/noun-compounds/" target="_blank">word compounds</a>!</p>
 
     </div>
 
