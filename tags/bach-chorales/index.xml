@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bach chorales | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tags/bach-chorales/</link>
+      <atom:link href="https://alisawuffles.github.io/tags/bach-chorales/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bach chorales</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/img/icon-32.png</url>
+      <title>Bach chorales</title>
+      <link>https://alisawuffles.github.io/tags/bach-chorales/</link>
+    </image>
+    
+    <item>
+      <title>Bach or Mock? A Grading Function for Chorales in the Style of J.S. Bach</title>
+      <link>https://alisawuffles.github.io/publication/grading_function/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/grading_function/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
