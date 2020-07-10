@@ -5,12 +5,20 @@
     <link>https://alisawuffles.github.io/authors/alex-fang/</link>
       <atom:link href="https://alisawuffles.github.io/authors/alex-fang/index.xml" rel="self" type="application/rss+xml" />
     <description>Alex Fang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-32.png</url>
       <title>Alex Fang</title>
       <link>https://alisawuffles.github.io/authors/alex-fang/</link>
     </image>
+    
+    <item>
+      <title>Incorporating Music Knowledge in Continual Dataset Augmentation for Music Generation</title>
+      <link>https://alisawuffles.github.io/publication/aug_gen/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/aug_gen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bach or Mock? A Grading Function for Chorales in the Style of J.S. Bach</title>
