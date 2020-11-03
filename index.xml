@@ -5,12 +5,20 @@
     <link>https://alisawuffles.github.io/</link>
       <atom:link href="https://alisawuffles.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Alisa Liu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://alisawuffles.github.io/img/icon-32.png</url>
       <title>Alisa Liu</title>
       <link>https://alisawuffles.github.io/</link>
     </image>
+    
+    <item>
+      <title>Model Selection for Deep Audio Source Separation via Clustering Analysis</title>
+      <link>https://alisawuffles.github.io/publication/ensemble/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/ensemble/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Incorporating Music Knowledge in Continual Dataset Augmentation for Music Generation</title>
@@ -47,14 +55,6 @@ This class ⁠makes robust everything we know and love from calculus. In this st
 &lt;p&gt;&lt;a href=&#34;../../files/study_guides/math_307.pdf&#34;&gt;Math 307: Applications of Linear Algebra&lt;/a&gt;
 More of a formula sheet than a study guide.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Model Selection for Deep Audio Source Separation via Clustering Analysis</title>
-      <link>https://alisawuffles.github.io/publication/ensemble/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://alisawuffles.github.io/publication/ensemble/</guid>
-      <description></description>
     </item>
     
     <item>
