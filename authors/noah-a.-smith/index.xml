@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noah A. Smith | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/authors/noah-a.-smith/</link>
+      <atom:link href="https://alisawuffles.github.io/authors/noah-a.-smith/index.xml" rel="self" type="application/rss+xml" />
+    <description>Noah A. Smith</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/img/icon-32.png</url>
+      <title>Noah A. Smith</title>
+      <link>https://alisawuffles.github.io/authors/noah-a.-smith/</link>
+    </image>
+    
+    <item>
+      <title>DExperts: Decoding-Time Controlled Text Generation with Experts and Anti-Experts</title>
+      <link>https://alisawuffles.github.io/publication/dexperts/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/dexperts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
