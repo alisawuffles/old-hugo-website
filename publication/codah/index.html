@@ -1,13 +1,45 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
+
 
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  
+  
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap" media="print" onload="this.media='all'">
+    
   
 
   
@@ -21,35 +53,48 @@
   
   
 
-  <meta name="author" content="Alisa Liu">
+  <meta name="author" content="Alisa Liu" />
 
   
   
   
     
   
-  <meta name="description" content="An adversarially-constructed dataset for common sense QA, collected from Northwestern ML students!">
+  <meta name="description" content="An adversarially-constructed dataset for common sense QA" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://alisawuffles.github.io/publication/codah/">
-
-  
-
+  <link rel="alternate" hreflang="en-us" href="https://alisawuffles.github.io/publication/codah/" />
 
   
   
   
-  <meta name="theme-color" content="rgb(251, 191, 183)">
+    <meta name="theme-color" content="rgb(251, 191, 183)" />
   
 
   
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
   
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
 
     
     
@@ -60,75 +105,218 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
     
 
     
 
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
   
 
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
-  
-
   
   
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
+  <link rel="stylesheet" href="/css/wowchemy.9c71cb1e985bb24585fb10b908352166.css" />
 
   
 
 
 
+  
+
+  
 
   
 
 
+
+
+  
+  
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  
 
-  <link rel="canonical" href="https://alisawuffles.github.io/publication/codah/">
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
 
+  <link rel="icon" type="image/png" href="/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://alisawuffles.github.io/publication/codah/" />
+
+  
+  
+  
+  
   
   
   
   
     
+    
   
   
-  <meta property="twitter:card" content="summary_large_image">
+
   
-  <meta property="og:site_name" content="Alisa Liu">
-  <meta property="og:url" content="https://alisawuffles.github.io/publication/codah/">
-  <meta property="og:title" content="CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense | Alisa Liu">
-  <meta property="og:description" content="An adversarially-constructed dataset for common sense QA, collected from Northwestern ML students!"><meta property="og:image" content="https://alisawuffles.github.io/img/icon-32.png">
-  <meta property="twitter:image" content="https://alisawuffles.github.io/img/icon-32.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-09-22T16:25:46-07:00">
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Alisa Liu" />
+  <meta property="og:url" content="https://alisawuffles.github.io/publication/codah/" />
+  <meta property="og:title" content="CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense | Alisa Liu" />
+  <meta property="og:description" content="An adversarially-constructed dataset for common sense QA" /><meta property="og:image" content="https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-06-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-06-01T00:00:00&#43;00:00">
   
 
   
 
 
     
-
-
 
 
 
@@ -146,10 +334,10 @@
     "@type": "WebPage",
     "@id": "https://alisawuffles.github.io/publication/codah/"
   },
-  "headline": "CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense",
+  "headline": "CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense",
   
-  "datePublished": "2017-01-01T00:00:00Z",
-  "dateModified": "2020-09-22T16:25:46-07:00",
+  "datePublished": "2019-06-01T00:00:00Z",
+  "dateModified": "2019-06-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -161,10 +349,10 @@
     "name": "Alisa Liu",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://alisawuffles.github.io/img/icon-512.png"
+      "url": "https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "An adversarially-constructed dataset for common sense QA, collected from Northwestern ML students!"
+  "description": "An adversarially-constructed dataset for common sense QA"
 }
 </script>
 
@@ -172,23 +360,35 @@
 
   
 
+  
 
   
 
 
-  
 
 
 
-
-
-  <title>CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense | Alisa Liu</title>
-
+  <title>CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense | Alisa Liu</title>
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
-  <aside class="search-results" id="search">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="be980448a0cf79ef2ae03d613777bb02" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.133800c88f3b5bb934932231fd94fed7.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -197,16 +397,22 @@
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
+
+      
+      
+
+      
 
     </section>
     <section class="section-search-results">
@@ -220,168 +426,209 @@
 </aside>
 
 
-  
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
 
+  <div class="page-header">
     
-      <a class="navbar-brand" href="/">Alisa Liu</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Alisa Liu</a>
+      </div>
+      
+
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
       </button>
       
 
-    
-    <div class="collapse navbar-collapse" id="navbar">
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Alisa Liu</a>
+      </div>
+      
 
       
       
-      <ul class="navbar-nav mr-auto">
-        
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
         
-
-        
-        
-        
+        <ul class="navbar-nav d-md-inline-flex">
           
-        
 
-        
-        
-        
-        
-        
-        
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
           
-        
+          
+          
+          
 
-        
-        
-        
-        
-        
-        
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
           
-        
+          
+          
+          
 
-        
-        
-        
-        
-        
-        
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
           
           
           
             
           
+
           
-        
 
-        <li class="nav-item">
-          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
           
           
+          
+          
+
           
             
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
           
           
+
         
 
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
         <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-      
-      </ul>
-      <ul class="navbar-nav ml-auto">
-      
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
         
 
         
+        
 
+        
         
 
       </ul>
 
     </div>
+  </nav>
+</header>
+
+
   </div>
-</nav>
+
+  <div class="page-body">
+    
 
 
-  <div class="pub">
+
+
+
+
+
+
+<div class="pub">
 
   
 
@@ -402,7 +649,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>CODAH: An Adversarially Authored Question-Answer Dataset for Common Sense</h1>
+  <h1>CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense</h1>
 
   
 
@@ -419,11 +666,12 @@
   <div>
     
 
-
-
-  
-  <span>Michael Chen</span>, <span>Mike D&rsquo;arcy</span>, <span>Alisa Liu</span>, <span>Jared Fernandez</span>, <span>Doug Downey</span>
-
+  <span >
+      Michael Chen</span>, <span >
+      Mike D’Arcy</span>, <span class="author-highlighted">
+      Alisa Liu</span>, <span >
+      Jared Fernandez</span>, <span >
+      Doug Downey</span>
   </div>
   
   
@@ -445,6 +693,9 @@
   
   
   
+  
+  
+  
 
   
   
@@ -452,15 +703,6 @@
 </div>
 
     
-
-
-
-
-
-
-
-
-
 
 
 
@@ -482,36 +724,41 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.aclweb.org/anthology/W19-2008.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://www.aclweb.org/anthology/W19-2008.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/publication/codah/cite.bib">
+  Cite
+</a>
+
+
 
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Websail-NU/CODAH" target="_blank" rel="noopener">
-  Code
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/Websail-NU/CODAH" target="_blank" rel="noopener">
+  Dataset
 </a>
 
 
 
 
 
-
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/posters/CODAH-Poster-FINAL.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="/uploads/codah.pdf" target="_blank" rel="noopener">
   Poster
 </a>
 
 
-  
+
 
 
 
@@ -530,9 +777,10 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Commonsense reasoning is a critical AI capability, but it is difficult to construct challenging datasets that test common sense. Recent neural question answering systems, based on large pre-trained models of language, have already achieved near-human-level performance on commonsense knowledge benchmarks. These systems do not possess human-level common sense, but are able to exploit limitations of the datasets to achieve human-level scores. We introduce the CODAH dataset, an adversarially-constructed evaluation dataset for testing common sense. CODAH forms a challenging extension to the recently-proposed SWAG dataset, which tests commonsense knowledge using sentence-completion questions that describe situations observed in video. To produce a more difficult dataset, we introduce a novel procedure for question acquisition in which workers author questions designed to target weaknesses of state-of-the-art neural question answering systems. Workers are rewarded for submissions that models fail to answer correctly both before and after fine-tuning (in cross-validation). We create 2.8k questions via this procedure and evaluate the performance of multiple state-of-the-art question answering systems on our dataset. We observe a significant gap between human performance, which is 95.3%, and the performance of the best baseline accuracy of 67.5% by the BERT-Large model.</p>
+    <p class="pub-abstract">Commonsense reasoning is a critical AI capability, but it is difficult to construct challenging datasets that test common sense. Recent neural question answering systems, based on large pre-trained models of language, have already achieved near-human-level performance on commonsense knowledge benchmarks. These systems do not possess human-level common sense, but are able to exploit limitations of the datasets to achieve human-level scores. We introduce the CODAH dataset, an adversarially-constructed evaluation dataset for testing common sense. CODAH forms a challenging extension to the recently-proposed SWAG dataset, which tests commonsense knowledge using sentence-completion questions that describe situations observed in video. To produce a more difficult dataset, we introduce a novel procedure for question acquisition in which workers author questions designed to target weaknesses of state-of-the-art neural question answering systems. Workers are rewarded for submissions that models fail to answer correctly both before and after fine-tuning (in cross-validation). We create 2.8k questions via this procedure and evaluate the performance of multiple state-of-the-art question answering systems on our dataset. We observe a significant gap between human performance, which is 95.3%, and the performance of the best baseline accuracy of 65.3% by the OpenAI GPT model.</p>
     
 
+    
     
     <div class="row">
       <div class="col-md-1"></div>
@@ -540,12 +788,9 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            
-            
             <a href="/publication/#1">
               Conference paper
             </a>
-            
           </div>
         </div>
       </div>
@@ -560,7 +805,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Evaluating Vector Space Representations for NLP Workshop (RepEval) at NAACL 2020</div>
+          <div class="col-12 col-md-9">Workshop on Evaluating Vector Space Representations for NLP (RepEval) 2019</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -578,14 +823,99 @@
 
 
 
+
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/common-sense/">common sense</a>
+  <a class="badge badge-light" href="/tag/commonsense-reasoning/">commonsense reasoning</a>
   
-  <a class="badge badge-light" href="/tags/dataset/">dataset</a>
+  <a class="badge badge-light" href="/tag/dataset-collection/">dataset collection</a>
   
-  <a class="badge badge-light" href="/tags/question-answering/">question-answering</a>
-  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://alisawuffles.github.io/publication/codah/&amp;text=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://alisawuffles.github.io/publication/codah/&amp;t=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense&amp;body=https://alisawuffles.github.io/publication/codah/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://alisawuffles.github.io/publication/codah/&amp;title=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense%20https://alisawuffles.github.io/publication/codah/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://alisawuffles.github.io/publication/codah/&amp;title=CODAH:%20An%20Adversarially-Authored%20Question%20Answering%20Dataset%20for%20Common%20Sense" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
 
@@ -598,32 +928,121 @@
 
 
 
-
-
-
   
   
     
-  
-  
-
-
 
 
 
 
   
+    
+
+
+
+
+  
+    
+
+
+
+  
+  
+  
+    
   
   
   
   <div class="media author-card content-widget-hr">
     
+      
+      <a href="https://alisawuffles.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hua18a9b5034248733d5e7a5ecc8ee5a86_899207_270x270_fill_q75_lanczos_center.jpg" alt="Alisa Liu"></a>
+    
 
     <div class="media-body">
-      <h5 class="card-title"><a href="/authors/michael-chen/"></a></h5>
-      
-      
+      <h5 class="card-title"><a href="https://alisawuffles.github.io/">Alisa Liu</a></h5>
+      <h6 class="card-subtitle">PhD student</h6>
+      <p class="card-text">2nd year PhD student in UW NLP group</p>
       <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:alisaliu@cs.washington.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/alisawuffles" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=3-lTFAwAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.semanticscholar.org/author/Alisa-Liu/94500147" target="_blank" rel="noopener">
+        <i class="ai ai-semantic-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/alisawuffles" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
   
 </ul>
 
@@ -631,6 +1050,26 @@
   </div>
 
 
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
 
@@ -640,154 +1079,72 @@
 
   
   
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/wanli/">WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation</a></li>
+      
+      <li><a href="/publication/knowledge_gen/">Generated Knowledge Prompting for Commonsense Reasoning</a></li>
+      
+    </ul>
+  </div>
+  
+
+
 
 
 
   </div>
 </div>
+  </div>
 
-      
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
 
-    
-    
-    
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
-        
-      
-
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
-
-    
-
-
-
+  
 
 
 
   
+
   
-  <div class="container">
-    <footer class="site-footer">
+
   
+  <p class="powered-by">
+    © 2022 Alisa Liu
+  </p>
+  
+
+  
+  
+
+
+
+
+
 
   <p class="powered-by">
     
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
 
+    </div>
+    
   </div>
-  
 
   
 <div id="modal" class="modal fade" role="dialog">
@@ -814,6 +1171,113 @@
     </div>
   </div>
 </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.1cb9e2fc8399acee94eab837265b73bf.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
+
+    
+
+
+
+
+
 
 </body>
 </html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>natural langauge inference | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tag/natural-langauge-inference/</link>
+      <atom:link href="https://alisawuffles.github.io/tag/natural-langauge-inference/index.xml" rel="self" type="application/rss+xml" />
+    <description>natural langauge inference</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Alisa Liu</copyright><lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_512x512_fill_lanczos_center_3.png</url>
+      <title>natural langauge inference</title>
+      <link>https://alisawuffles.github.io/tag/natural-langauge-inference/</link>
+    </image>
+    
+    <item>
+      <title>WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation</title>
+      <link>https://alisawuffles.github.io/publication/wanli/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/wanli/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

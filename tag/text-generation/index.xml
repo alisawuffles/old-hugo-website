@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text generation | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tag/text-generation/</link>
+      <atom:link href="https://alisawuffles.github.io/tag/text-generation/index.xml" rel="self" type="application/rss+xml" />
+    <description>text generation</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Alisa Liu</copyright><lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_512x512_fill_lanczos_center_3.png</url>
+      <title>text generation</title>
+      <link>https://alisawuffles.github.io/tag/text-generation/</link>
+    </image>
+    
+    <item>
+      <title>WANLI: Worker and AI Collaboration for Natural Language Inference Dataset Creation</title>
+      <link>https://alisawuffles.github.io/publication/wanli/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/wanli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generated Knowledge Prompting for Commonsense Reasoning</title>
+      <link>https://alisawuffles.github.io/publication/knowledge_gen/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/knowledge_gen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DExperts: Decoding-Time Controlled Text Generation with Experts and Anti-Experts</title>
+      <link>https://alisawuffles.github.io/publication/dexperts/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/dexperts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

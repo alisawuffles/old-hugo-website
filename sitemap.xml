@@ -1,279 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   
   <url>
-    <loc>https://alisawuffles.github.io/publication_types/1/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/</loc>
-    <lastmod>2022-01-23T15:02:45-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/talk/example-talk/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/</loc>
-    <lastmod>2022-01-23T15:02:45-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/event/</loc><lastmod>2030-06-01T13:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/chandra-bhagavatula/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/dexperts/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication-type/3/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/maarten-sap/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/noah-a.-smith/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/dataset-collection/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication_types/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/natural-langauge-inference/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/swabha-swayamdipta/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication_types/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/text-generation/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/ximing-lu/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/yejin-choi/</loc>
-    <lastmod>2021-11-22T20:23:53-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tags/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/bryan-pardo/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/text-generation/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/deep-clustering/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/wanli/</loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/deep-learning/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2022-01-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/ensemble-methods/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/commonsense-reasoning/</loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/ensemble/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/knowledge_gen/</loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/performance-prediction/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/prem-seetharaman/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/source-separation/</loc>
-    <lastmod>2020-11-30T19:26:06-08:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/alex-fang/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/data-augmentation/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/domain-knowledge/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-10-15T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/gaetan-hadjeres/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication-type/1/</loc><lastmod>2021-08-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/aug_gen/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-08-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/music-generation/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/dexperts/</loc><lastmod>2021-08-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/automatic-evaluation/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2021-08-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/bach-chorales/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2020-11-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/grading_function/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/deep-clustering/</loc><lastmod>2020-11-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/post/study-guides/</loc>
-    <lastmod>2019-12-26T17:09:55-08:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/ensemble/</loc><lastmod>2020-11-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication_types/3/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2020-11-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/definition-modeling/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/source-separation/</loc><lastmod>2020-11-02T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/doug-downey/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2020-07-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/multidef/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/grading_function/</loc><lastmod>2020-07-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/ruimin-zhu/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/aug_gen/</loc><lastmod>2020-07-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/thanapon-noraset/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/music-generation/</loc><lastmod>2020-07-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/wenxin-jiang/</loc>
-    <lastmod>2020-07-02T09:31:41-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/post/</loc><lastmod>2019-11-09T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/codah/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/post/study-guides/</loc><lastmod>2019-11-09T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/common-sense/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/publication/codah/</loc><lastmod>2019-06-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/dataset/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2019-06-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/jared-fernandez/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2019-06-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/michael-chen/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2019-06-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/mike-darcy/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc></loc><lastmod>2019-06-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/question-answering/</loc>
-    <lastmod>2020-09-22T16:25:46-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication_types/2/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/alisa-liu/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/tag/deep-learning/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/publication/crispr/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/project/example/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/dexter-everett/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://alisawuffles.github.io/authors/jenny-pan/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
+    <loc>https://alisawuffles.github.io/admin/</loc></url>
   <url>
-    <loc>https://alisawuffles.github.io/tags/literature-review/</loc>
-    <lastmod>2020-07-09T20:43:38-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alisawuffles.github.io/authors/admin/</loc>
-    <lastmod>2022-01-23T15:02:45-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alisawuffles.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://alisawuffles.github.io/post/</loc>
-    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alisawuffles.github.io/publication/</loc>
-    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
-  </url>
-  
-</urlset>
+    <loc>https://alisawuffles.github.io/categories/</loc></url></urlset>

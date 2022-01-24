@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>commonsense reasoning | Alisa Liu</title>
+    <link>https://alisawuffles.github.io/tag/commonsense-reasoning/</link>
+      <atom:link href="https://alisawuffles.github.io/tag/commonsense-reasoning/index.xml" rel="self" type="application/rss+xml" />
+    <description>commonsense reasoning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Alisa Liu</copyright><lastBuildDate>Fri, 15 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://alisawuffles.github.io/media/icon_hu1157edf0171962ecc879d3d49fd72645_3527_512x512_fill_lanczos_center_3.png</url>
+      <title>commonsense reasoning</title>
+      <link>https://alisawuffles.github.io/tag/commonsense-reasoning/</link>
+    </image>
+    
+    <item>
+      <title>Generated Knowledge Prompting for Commonsense Reasoning</title>
+      <link>https://alisawuffles.github.io/publication/knowledge_gen/</link>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/knowledge_gen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CODAH: An Adversarially-Authored Question Answering Dataset for Common Sense</title>
+      <link>https://alisawuffles.github.io/publication/codah/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://alisawuffles.github.io/publication/codah/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
